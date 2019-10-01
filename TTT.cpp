@@ -2,10 +2,29 @@
 //
 
 #include <iostream>
+#include <vector>
+#include <string>
 
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << "Welcome to Tic Tac Toe."<<endl;
+	cout << "Game Rules: " << endl;
+	cout << "This is standard TTT but you are allowed to specify the following: " << endl;
+	cout << "1) Board Size: NxN, where N >= 3" << endl;
+	cout << "2) Number of human players, M,  where M >= 1" << endl;
+	cout << "3) Number of AI players, A, where A >= 0" << endl;
+	cout << "4) Note, the total number of players, M+A, must follow be within the range: 2 <= M+A <= N-1" << endl;
+	cout << endl;
+	cout << "The rules for winning the game for a player for a NxN board are as follows: " << endl;
+	cout << "A Player wins the game if they have N pieces in a row, column or diagonal on the board." << endl;
+	cout << "It is possible for no player to win the game, in which the game ends in a tie." << endl;
+	cout << "..." << endl;
+	cout << "..." << endl; 
+	cout << "Game Start" << endl;
+
+	Game game1;
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
